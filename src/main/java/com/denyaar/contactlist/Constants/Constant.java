@@ -8,4 +8,6 @@ package com.denyaar.contactlist.Constants;
 
 public class Constant {
     public static final String PHOTO_DIRECTORY_PATH = System.getProperty("user.home") + "/Downloads/uploads/";
+    public   static final String X_REQUESTED_WITH = "X-Requested-With";
+
 }
