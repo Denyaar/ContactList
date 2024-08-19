@@ -57,6 +57,7 @@ public class ContactServiceImpl implements ContactService {
 
     @Override
     public String uploadImage(String id, MultipartFile file) {
+        log.info("Uploading image for contact with id: {}", id);
         Contact contact = contactRepo.findContactById(id).orElseThrow(() -> new RuntimeException("Contact not found"));
         String imageUrl = photoFunction.apply(id, file);
 

@@ -22,7 +22,7 @@ import org.hibernate.annotations.UuidGenerator;
 public class Contact {
     @Id
     @UuidGenerator
-    @Column(name = "contact_id", updatable = false, nullable = false, unique = true)
+    @Column(name = "id", updatable = false, nullable = false, unique = true)
     private String id;
     private String name;
     private String email;
