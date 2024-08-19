@@ -14,11 +14,9 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
-import java.util.Collections;
 import java.util.List;
 
 import static com.denyaar.contactlist.Constants.Constant.X_REQUESTED_WITH;
-import static org.springframework.http.HttpHeaders.*;
 
 @Configuration
 public class CorsConfig {
